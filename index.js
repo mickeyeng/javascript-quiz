@@ -21,6 +21,13 @@ form.addEventListener('submit', e => {
     }
   });
 
+  scrollTo(0, 0);
   result.querySelector('span').textContent = `${score}%`;
   result.classList.remove('d-none');
 });
+
+console.log(window);
+
+// window object (global object)
+
+console.log(document.querySelector('form'));
